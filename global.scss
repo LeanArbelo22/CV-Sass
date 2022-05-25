@@ -1,0 +1,45 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap');
+
+/* 
+Montserrat 400,500,600,700
+Poppins 600,700,900,900it
+*/
+
+// COLOR PALLETTE
+$dark: #303041;
+$soft: #3D3A50;
+$blue: #0EA2F6;
+$white: #F4FCFE;
+
+
+// MEDIAQUERIES
+@mixin sm-mobile{
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 425px) { //  and (min-width: 360px)
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) and (min-width: 425px) {
+        @content;
+    }
+}
+
+@mixin to-tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        @content;
+    }
+}
